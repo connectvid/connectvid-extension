@@ -1,0 +1,45 @@
+
+.loginScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+  }
+  
+  .loginScreen #loginContainer {
+    background-color: #ffffff;
+    padding: 10px 30px 10px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .loginScreen #loginContainer h2 {
+    margin-bottom: 10px;
+  }
+  
+  .loginScreen #loginContainer input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .loginScreen #loginContainer button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .loginScreen #loginContainer button:hover {
+    background-color: #0056b3;
+  }
+  
+  .loginScreen #loginContainer #loginError {
+    margin-top: 10px;
+  }
+  

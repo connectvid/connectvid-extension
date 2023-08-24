@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mailtoon Extension</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="popup.js"></script>
+  <style>
+    img {
+      max-width: 100%;
+      max-height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div class="loginScreen">
+    <div id="loginContainer">
+      <h2>Login to Access Screenshot</h2>
+      <input type="text" id="extensionId" placeholder="Extension ID">
+      <input type="email" id="email" placeholder="Email">
+      <button id="verifyBtn">Verify</button>
+      <p id="loginError" style="color: red;"></p>
+    </div>
+  </div>
+ 
+  <div id="screenshotContainer" style="display: none;">
+    <!-- <p>Verified User:</p>
+    <p>Extension ID: <span id="verifiedExtensionId"></span></p>
+    <p>Email: <span id="verifiedEmail"></span></p> -->
+      <h3>Capture screen and generate video</h3>
+      <button id="captureBtn">Capture Screenshot</button>
+      <br>
+      <img style="display: none;" id="screenshotImage" src="#" alt="Screenshot">
+      <br>
+      <button id="downloadBtn" disabled>Download Image</button>
+      <button id="createVideoButton" disabled>Create Video</button>
+      <!-- <button id="uploadBtn" disabled>Upload to ImgBB</button> -->
+  </div>
+
+  <div id="suggestVideoContainer" style="display: none;">
+      <h3>Suggested videos</h3>
+      <div id="suggestedVideos"></div>
+<!--todo: -->
+      <button id="generateVideo" >Generate Video</button>
+  </div>
+  <div id="inputDetails" style="display: none;">
+      <h3>Input User data</h3>
+      <button id="getVideo" >Get Video</button>
+      <div id="generatedVideo" style="display: none;">
+        <p>This is the generated video</p>
+      </div>
+  </div>
+</body>
+</html>
+
